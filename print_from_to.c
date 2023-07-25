@@ -14,11 +14,12 @@
 int print_from_to(char *start, char *stop, char *except)
 {
 	int count = 0;
-	while(*start && start < stop)
+
+	while (*start && start < stop)
 	{
 		if (except == NULL || strchr(except, *start) == NULL)
 		{
-			 _putchar(*start);
+			_putchar(*start);
 			 count++;
 		}
 		start++;
