@@ -66,7 +66,7 @@ typedef struct specifier
 
 /* _put.c module */
 int _puts(char *str);
-int _putchar(int c);
+int _putchar(char c);
 
 /* print_functions.c module */
 int print_char(va_list ap, params_t *params);
@@ -96,7 +96,7 @@ int print_octal(va_list ap, params_t *params);
 /* simple_printers.c module */
 int print_from_to(char *start, char *stop, char *except);
 int print_rev(va_list ap, params_t *params);
-int print_rot13(va_list ap, params_t *params);
+int print_rot13(va_list ap);
 
 /* print_number.c module */
 int _isdigit(int c);

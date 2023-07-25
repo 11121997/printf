@@ -5,11 +5,11 @@
  * Return: counter
  *
  */
-int printf_rot13(va_list args)
+int print_rot13(va_list ap)
 {
 int i, j, counter = 0;
 int k = 0;
-char *s = va_arg(args, char*);
+char *s = va_arg(ap, char*);
 char alpha[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
 char beta[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
 
